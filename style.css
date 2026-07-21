@@ -1,7 +1,6 @@
-/* Custom CSS Reset & Variable */
 :root {
     --primary-color: #1a1a2e;
-    --accent-color: #d4af37; /* ពណ៌មាស ហុងស៊ុយ */
+    --accent-color: #d4af37; /* ពណ៌មាស */
     --bg-color: #0f0f1a;
     --card-bg: #16213e;
     --text-color: #e0e0e0;
@@ -9,7 +8,7 @@
 }
 
 body {
-    font-family: 'Kantumruy Pro', sans-serif;
+    font-family: 'Inter', 'Kantumruy Pro', sans-serif;
     background-color: var(--bg-color);
     color: var(--text-color);
     margin: 0;
@@ -22,42 +21,83 @@ body {
     margin: 0 auto;
 }
 
-.header {
-    text-align: center;
-    padding: 40px 0 20px;
+/* Language Switcher Button Bar */
+.lang-switcher {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-bottom: 20px;
 }
 
-.logo {
+.lang-btn {
+    background-color: transparent;
+    color: var(--text-muted);
+    border: 1px solid var(--text-muted);
+    padding: 6px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 0.85rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.lang-btn.active, .lang-btn:hover {
+    background-color: var(--accent-color);
+    color: #000;
+    border-color: var(--accent-color);
+}
+
+/* Header & Logo Section */
+.header {
+    text-align: center;
+    padding: 20px 0 30px;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.app-logo {
+    max-width: 100px;
+    height: auto;
+    border-radius: 16px;
+}
+
+.fallback-logo {
     font-size: 1.5rem;
     font-weight: bold;
     color: var(--accent-color);
-    margin-bottom: 10px;
 }
 
 h1 {
     font-size: 2rem;
-    margin: 0;
+    margin: 0 0 10px 0;
     color: #fff;
 }
 
 .updated-date {
     color: var(--text-muted);
     font-size: 0.9rem;
+    margin: 0;
 }
 
+/* Cards Section */
 .card {
     background-color: var(--card-bg);
     border-radius: 12px;
     padding: 24px;
     margin-bottom: 20px;
-    border: 1px solid rgba(212, 175, 55, 0.2); /* Border មាសស្តើងៗ */
+    border: 1px solid rgba(212, 175, 55, 0.2);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
 
 h2 {
     color: var(--accent-color);
     margin-top: 0;
-    font-size: 1.2rem;
+    font-size: 1.25rem;
 }
 
 ul {
@@ -89,4 +129,9 @@ footer {
     padding: 20px;
     color: var(--text-muted);
     font-size: 0.85rem;
+}
+
+/* Utility classes for initial hiding */
+.lang-kh {
+    display: none;
 }

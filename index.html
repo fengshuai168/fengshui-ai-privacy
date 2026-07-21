@@ -1,58 +1,150 @@
 <!DOCTYPE html>
-<html lang="km">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy - Feng Shui AI</title>
 
-    <!-- Google Fonts សម្រាប់អក្សរខ្មែរស្អាត (Kantumruy Pro) -->
+    <!-- Google Fonts សម្រាប់អក្សរខ្មែរ និងអង់គ្លេសស្អាត (Kantumruy Pro & Inter) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Kantumruy+Pro:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <div class="container">
-        <!-- Header Design -->
+        <!-- Language Switcher Bar -->
+        <div class="lang-switcher">
+            <button id="btn-en" class="lang-btn active" onclick="switchLanguage('en')">English</button>
+            <button id="btn-kh" class="lang-btn" onclick="switchLanguage('kh')">ភាសាខ្មែរ</button>
+        </div>
+
+        <!-- Header Section -->
         <header class="header">
-            <div class="logo">🔮 Feng Shui AI</div>
-            <h1>គោលការណ៍ឯកជនភាព (Privacy Policy)</h1>
-            <p class="updated-date">ធ្វើបច្ចុប្បន្នភាពចុងក្រោយ៖ ២១ កក្កដា ២០២៦</p>
+            <!-- App Logo Mock Placeholder -->
+            <div class="logo-container">
+                <img src="logo/logo.png" alt="App Logo" class="app-logo" onerror="this.style.display='none'; document.getElementById('fallback-logo').style.display='block';">
+                <div id="fallback-logo" class="fallback-logo" style="display: none;">🔮 Feng Shui AI</div>
+            </div>
+            
+            <!-- Language specific titles -->
+            <h1 class="lang-en">Privacy Policy</h1>
+            <h1 class="lang-kh">គោលការណ៍ឯកជនភាព</h1>
+
+            <p class="updated-date lang-en">Last Updated: July 21, 2026</p>
+            <p class="updated-date lang-kh">ធ្វើបច្ចុប្បន្នភាពចុងក្រោយ៖ ២១ កក្កដា ២០២៦</p>
         </header>
 
         <!-- Main Content Section -->
         <main class="content">
+            
+            <!-- Section 1 -->
             <section class="card">
-                <h2>១. សេចក្តីផ្តើម</h2>
-                <p>សូមស្វាគមន៍មកកាន់កម្មវិធី <strong>Feng Shui AI</strong>។ យើងខ្ញុំយកចិត្តទុកដាក់យ៉ាងខ្លាំងចំពោះការការពារឯកជនភាព និងទិន្នន័យផ្ទាល់ខ្លួនរបស់អ្នកប្រើប្រាស់។ គោលការណ៍នេះរៀបចំឡើងដើម្បីពន្យល់ពីរបៀបដែលយើងខ្ញុំគ្រប់គ្រងព័ត៌មានរបស់អ្នក ពេលប្រើប្រាស់កម្មវិធីលើទូរស័ព្ទ និងថេប្លេត។</p>
+                <div class="lang-en">
+                    <h2>1. Introduction</h2>
+                    <p>Welcome to <strong>Feng Shui AI</strong>. We are committed to protecting your privacy and personal data. This Privacy Policy explains how we collect, use, and safeguard your information when you use our mobile and tablet application.</p>
+                </div>
+                <div class="lang-kh">
+                    <h2>១. សេចក្តីផ្តើម</h2>
+                    <p>សូមស្វាគមន៍មកកាន់កម្មវិធី <strong>Feng Shui AI</strong>។ យើងខ្ញុំយកចិត្តទុកដាក់យ៉ាងខ្លាំងចំពោះការការពារឯកជនភាព និងទិន្នន័យផ្ទាល់ខ្លួនរបស់អ្នកប្រើប្រាស់។ គោលការណ៍ឯកជនភាពនេះរៀបចំឡើងដើម្បីពន្យល់ពីរបៀបដែលយើងខ្ញុំប្រមូល ប្រើប្រាស់ និងការពារព័ត៌មានរបស់អ្នក ពេលអ្នកប្រើប្រាស់កម្មវិធីទូរស័ព្ទ និងថេប្លេតរបស់យើងខ្ញុំ។</p>
+                </div>
             </section>
 
+            <!-- Section 2 -->
             <section class="card">
-                <h2>២. ទិន្នន័យដែលយើងខ្ញុំប្រមូល</h2>
-                <ul>
-                    <li><strong>ព័ត៌មានមិនផ្ទាល់ខ្លួន (Technical Data)៖</strong> ប្រភេទឧបករណ៍ (Smartphone, Tablet), iOS/Android Version ដើម្បីតម្រូវ UI/UX និងល្បឿន App។</li>
-                    <li><strong>ទិន្នន័យដែលអ្នកបញ្ចូល៖** រាល់លេខទូរស័ព្ទ ឬឆ្នាំកំណើតដែលអ្នកវាយបញ្ចូល គឺត្រូវបានរក្សាទុក និងគណនាតែនៅក្នុងឧបករណ៍ (Local Device Cache) របស់អ្នកប៉ុណ្ណោះ មិនត្រូវបានផ្ញើទៅ Server ខាងក្រៅឡើយ។</li>
-                </ul>
+                <div class="lang-en">
+                    <h2>2. Information We Collect</h2>
+                    <p>Our application is designed with user privacy as a top priority:</p>
+                    <ul>
+                        <li><strong>Non-Personal Data:</strong> We may collect technical information such as device type (Smartphones, iPads, Tablets), operating system version, and app performance logs solely to optimize performance and user experience.</li>
+                        <li><strong>User Input Data:</strong> Any information you enter into the app (such as phone numbers or birth years for calculation) is processed locally on your device (Local Device Cache) and is not stored or transmitted to external servers.</li>
+                    </ul>
+                </div>
+                <div class="lang-kh">
+                    <h2>២. ទិន្នន័យដែលយើងខ្ញុំប្រមូល</h2>
+                    <p>កម្មវិធីរបស់យើងខ្ញុំត្រូវបានរចនាឡើងដើម្បីការពារឯកជនភាពរបស់អ្នកជាអតិបរមា៖</p>
+                    <ul>
+                        <li><strong>ព័ត៌មានមិនផ្ទាល់ខ្លួន (Technical Data)៖** ប្រភេទឧបករណ៍ (Smartphone, iPad, Tablet) និងប្រព័ន្ធប្រតិបត្តិការ (iOS/Android) ដើម្បតម្រូវ UI/UX និងល្បឿន App។</li>
+                        <li><strong>ទិន្នន័យដែលអ្នកបញ្ចូល៖** រាល់លេខទូរស័ព្ទ ឬឆ្នាំកំណើតដែលអ្នកវាយបញ្ចូល គឺត្រូវបានរក្សាទុក និងគណនាតែនៅក្នុងឧបករណ៍ (Local Device Cache) របស់អ្នកប៉ុណ្ណោះ មិនត្រូវបានផ្ញើទៅ Server ខាងក្រៅឡើយ។</li>
+                    </ul>
+                </div>
             </section>
 
+            <!-- Section 3 -->
             <section class="card">
-                <h2>៣. សេវាកម្មភាគីទីបី (Third-Party)</h2>
-                <p>កម្មវិធីនេះអាចប្រើប្រាស់សេវា Google AdMob ឬ Firebase ដើមបីបង្ហាញពាណិជ្ជកម្មសមស្រប និងវិភាគទិន្នន័យបច្ចេកទេសទូទៅ។</p>
+                <div class="lang-en">
+                    <h2>3. Third-Party Services</h2>
+                    <p>The app may utilize third-party services for analytics or advertising purposes, such as Google AdMob or Google Analytics for Firebase. These services may collect device identifiers (Advertising ID) to serve relevant advertisements.</p>
+                </div>
+                <div class="lang-kh">
+                    <h2>៣. សេវាកម្មភាគីទីបី (Third-Party Services)</h2>
+                    <p>កម្មវិធីនេះអាចប្រើប្រាស់សេវាកម្មភាគីទីបី ដើម្បីជួយគាំទ្រដល់ការដំណើរការ ឬការបង្ហាញពាណិជ្ជកម្ម ដូចជា Google AdMob ឬ Google Analytics សម្រាប់ Firebase។ សេវាកម្មទាំងនេះអាចប្រមូលព័ត៌មានអត្តសញ្ញាណឧបករណ៍ (Advertising ID) ដើម្បីបង្ហាញពាណិជ្ជកម្មដែលសមស្រប។</p>
+                </div>
             </section>
 
+            <!-- Section 4 -->
+            <section class="card">
+                <div class="lang-en">
+                    <h2>4. Data Security</h2>
+                    <p>We implement appropriate technical measures to safeguard your app data and cache against unauthorized access or alteration.</p>
+                </div>
+                <div class="lang-kh">
+                    <h2>៤. សន្តិសុខទិន្នន័យ</h2>
+                    <p>យើងខ្ញុំប្រើប្រាស់វិធានការបច្ចេកទេស និងការប្រុងប្រយ័ត្នសមរម្យ ដើម្បីការពារទិន្នន័យ និងកំណត់ត្រា (Cache) នៅក្នុង App កុំឱ្យមានការចូលប្រើប្រាស់ដោយគ្មានការអនុញ្ញាត។</p>
+                </div>
+            </section>
+
+            <!-- Section 5 -->
             <section class="card contact-card">
-                <h2>៤. ទំនាក់ទំនង</h2>
-                <p>ប្រសិនបើមានសំណួរផ្សេងៗ សូមទាក់ទងមកកាន់យើងខ្ញុំតាមរយៈ៖</p>
-                <a href="mailto:support@yourdomain.com" class="email-btn">📧 ទាក់ទងតាម Email</a>
+                <div class="lang-en">
+                    <h2>5. Contact Us</h2>
+                    <p>If you have any questions about this Privacy Policy, please contact us at:</p>
+                    <a href="mailto:support@yourdomain.com" class="email-btn">📧 Contact via Email</a>
+                </div>
+                <div class="lang-kh">
+                    <h2>៥. ទំនាក់ទំនង</h2>
+                    <p>ប្រសិនបើអ្នកមានសំណួរផ្សេងៗអំពីគោលការណ៍ឯកជនភាពនេះ សូមទាក់ទងមកកាន់យើងខ្ញុំតាមរយៈ៖</p>
+                    <a href="mailto:support@yourdomain.com" class="email-btn">📧 ទាក់ទងតាម Email</a>
+                </div>
             </section>
+
         </main>
 
         <footer>
             <p>© 2026 Feng Shui AI. All rights reserved.</p>
         </footer>
     </div>
+
+    <!-- JavaScript សម្រាប់ Switch ភាសា -->
+    <script>
+        function switchLanguage(lang) {
+            const enElements = document.querySelectorAll('.lang-en');
+            const khElements = document.querySelectorAll('.lang-kh');
+            const btnEn = document.getElementById('btn-en');
+            const btnKh = document.getElementById('btn-kh');
+
+            if (lang === 'kh') {
+                enElements.forEach(el => el.style.display = 'none');
+                khElements.forEach(el => el.style.display = 'block');
+                btnKh.classList.add('active');
+                btnEn.classList.remove('active');
+                document.documentElement.lang = 'km';
+            } else {
+                khElements.forEach(el => el.style.display = 'none');
+                enElements.forEach(el => el.style.display = 'block');
+                btnEn.classList.add('active');
+                btnKh.classList.remove('active');
+                document.documentElement.lang = 'en';
+            }
+        }
+
+        // Set Default Language to English on Page Load
+        document.addEventListener("DOMContentLoaded", function() {
+            switchLanguage('en');
+        });
+    </script>
 
 </body>
 </html>
